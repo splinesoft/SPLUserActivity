@@ -1,0 +1,9 @@
+platform :ios, '8.0'
+
+xcodeproj 'SPLUserActivityExample'
+
+pod 'SPLUserActivity', :path => '../'
+
+target "SPLUserActivityExampleTests", :exclusive => true do
+    pod 'MXGSynchronizeTest'
+end
