@@ -12,6 +12,10 @@
 
 `SPLWebActivity` powers a Handoff activity for web browsing. It allows a user to continue browsing from the same web page on another device.
 
+### Examples
+
+Check out `Example` for a simple app that displays a `WKWebView` and broadcasts a Handoff activity as the user browses between web pages. Note that Handoff won't function in the simulator - you'll need to run it on a device.
+
 ### `WKWebView`
 
 If your app is using a `WKWebView`, initialize a `SPLWebActivity` by passing your webview:
@@ -54,7 +58,7 @@ After receiving a `setNeedsUpdate` message, `SPLWebActivity` will query your `UI
 SPLWebActivity *myActivity = [SPLWebActivity activityWithURL:[NSURL URLWithString:@"http://splinesoft.net"]];
 ```
 
-## Completion
+## Continue Events
 
 You may optionally specify a block that will be called when the user continues an activity on another device.
 
@@ -72,7 +76,7 @@ When your user activity is no longer relevant -- perhaps when your webview is po
 [myActivity invalidate];
 ```
 
-An invalidated activity can no longer `becomeCurrent` and cannot be reused. If you'd like to broadcast again, create a new instance of `SPLWebActivity`.
+An invalidated activity can no longer `becomeCurrent` and cannot be reused. If you'd like to broadcast a Handoff event again, create a new instance of `SPLWebActivity`.
 
 ## Install
 
