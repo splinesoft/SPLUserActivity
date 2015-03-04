@@ -18,27 +18,27 @@ Check out `Example` for a simple app that displays a `WKWebView` and broadcasts 
 
 ### `WKWebView`
 
-If your app is using a `WKWebView`, initialize a `SPLWebActivity` by passing your webview:
+If your app uses a `WKWebView`, initialize a `SPLWebActivity` by passing your webview:
 
 ```objc
 WKWebView *myWebView = ...
 
-SPLWebActivity *webActivity = [SPLWebActivity activityWithWebKitWebView:myWebView];
+SPLWebActivity *webActivity = [SPLWebActivity activityWithWKWebView:myWebView];
 ```
 
 That's it -- you're done! `SPLWebActivity` will start broadcasting a Handoff event right away. Thanks to the magic of KVO, `SPLWebActivity` will observe your `WKWebView` and will automatically update its activity URL and page title as the user navigates between web pages.
 
 ### `UIWebView`
 
-If your app is using a `UIWebView`, initialize a `SPLWebActivity` by passing your webview:
+If your app uses a `UIWebView`, initialize a `SPLWebActivity` by passing your webview:
 
 ```objc
 UIWebView *myWebView = ...
 
-self.webActivity = [SPLWebActivity activityWithWebView:myWebView];
+self.webActivity = [SPLWebActivity activityWithUIWebView:myWebView];
 ```
 
-As with `WKWebView`, `SPLWebActivity` will begin broadcasting a Handoff event right away. `UIWebView` does not conform to KVO, however, so you'll need to tell `SPLWebActivity` to update itself as the user navigates between web pages:
+As with `WKWebView`, `SPLWebActivity` will begin broadcasting a Handoff event right away. However, `UIWebView` does not conform to KVO, so you'll need to tell `SPLWebActivity` to update itself as the user navigates between web pages:
 
 ```objc
 #pragma mark - UIWebViewDelegate
@@ -48,7 +48,7 @@ As with `WKWebView`, `SPLWebActivity` will begin broadcasting a Handoff event ri
 }
 ```
 
-After receiving a `setNeedsUpdate` message, `SPLWebActivity` will query your `UIWebView` for the user's current URL.
+After receiving a `setNeedsUpdate` message, `SPLWebActivity` will query your `UIWebView` for the user's current URL and update its Handoff activity.
 
 ### URLs
 

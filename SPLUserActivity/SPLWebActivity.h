@@ -24,7 +24,7 @@
  *
  *  @return an initialized activity
  */
-+ (instancetype) activityWithWebKitWebView:(WKWebView *)webView;
++ (instancetype) activityWithWKWebView:(WKWebView *)webView;
 
 /**
  *  Create an activity that can continue a web browsing session on another
@@ -38,7 +38,7 @@
  *
  *  @return an initialized activity
  */
-+ (instancetype) activityWithWebView:(UIWebView *)webView;
++ (instancetype) activityWithUIWebView:(UIWebView *)webView;
 
 /**
  *  Create an activity that can start browsing a URL on another device.

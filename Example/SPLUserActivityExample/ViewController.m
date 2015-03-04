@@ -42,7 +42,7 @@
      [NSURLRequest requestWithURL:
       [NSURL URLWithString:@"http://splinesoft.net"]]];
     
-    _activity = [SPLWebActivity activityWithWebKitWebView:self.webView];
+    _activity = [SPLWebActivity activityWithWKWebView:self.webView];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

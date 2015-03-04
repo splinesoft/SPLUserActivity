@@ -19,7 +19,7 @@ static char SPLWebActivityContext;
 
 @implementation SPLWebActivity
 
-+ (instancetype)activityWithWebView:(UIWebView *)webView {
++ (instancetype)activityWithUIWebView:(UIWebView *)webView {
     NSParameterAssert(webView);
     
     SPLWebActivity *activity = [[self alloc] initWithType:NSUserActivityTypeBrowsingWeb];
@@ -32,7 +32,7 @@ static char SPLWebActivityContext;
     return activity;
 }
 
-+ (instancetype)activityWithWebKitWebView:(WKWebView *)webView {
++ (instancetype)activityWithWKWebView:(WKWebView *)webView {
     NSParameterAssert(webView);
     
     SPLWebActivity *activity = [[self alloc] initWithType:NSUserActivityTypeBrowsingWeb];

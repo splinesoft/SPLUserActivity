@@ -27,7 +27,7 @@
     webView = [[WKWebView alloc] initWithFrame:CGRectZero
                                  configuration:[WKWebViewConfiguration new]];
     
-    webActivity = [SPLWebActivity activityWithWebKitWebView:webView];
+    webActivity = [SPLWebActivity activityWithWKWebView:webView];
 }
 
 - (void)testInitializable {
