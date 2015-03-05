@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2083B3CB3D63F1BCAC41B46D /* libPods-SPLUserActivityExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E545881C4ADCDC82D1E7090 /* libPods-SPLUserActivityExampleTests.a */; };
 		E94A6AA51AA400F7001A7C95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E94A6AA41AA400F7001A7C95 /* main.m */; };
 		E94A6AA81AA400F7001A7C95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E94A6AA71AA400F7001A7C95 /* AppDelegate.m */; };
 		E94A6AAB1AA400F7001A7C95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94A6AAA1AA400F7001A7C95 /* ViewController.m */; };
 		E94A6AB01AA400F7001A7C95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94A6AAF1AA400F7001A7C95 /* Images.xcassets */; };
 		E94A6ABF1AA400F7001A7C95 /* SPLUserActivityExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E94A6ABE1AA400F7001A7C95 /* SPLUserActivityExampleTests.m */; };
 		FBFF3D387DF500B9ED51B44E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAAD6EAAA12844398FA87724 /* libPods.a */; };
+		FF73328DEC5671637EA416FD /* libPods-SPLUserActivityExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA45256FCE1E3ECA148DA79 /* libPods-SPLUserActivityExampleTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +29,8 @@
 /* Begin PBXFileReference section */
 		0B91D930852E2D4909C2576E /* Pods-SPLUserActivityExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPLUserActivityExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPLUserActivityExampleTests/Pods-SPLUserActivityExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		174E74222B7F2CF3BDC64AEC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4AA45256FCE1E3ECA148DA79 /* libPods-SPLUserActivityExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SPLUserActivityExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		857F2CB4A04C4AC648BBACB8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		9E545881C4ADCDC82D1E7090 /* libPods-SPLUserActivityExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SPLUserActivityExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAAD6EAAA12844398FA87724 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFDC63DF854A857FCE60F8B /* Pods-SPLUserActivityExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPLUserActivityExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPLUserActivityExampleTests/Pods-SPLUserActivityExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E94A6A9F1AA400F7001A7C95 /* SPLUserActivityExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPLUserActivityExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2083B3CB3D63F1BCAC41B46D /* libPods-SPLUserActivityExampleTests.a in Frameworks */,
+				FF73328DEC5671637EA416FD /* libPods-SPLUserActivityExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				DAAD6EAAA12844398FA87724 /* libPods.a */,
-				9E545881C4ADCDC82D1E7090 /* libPods-SPLUserActivityExampleTests.a */,
+				4AA45256FCE1E3ECA148DA79 /* libPods-SPLUserActivityExampleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

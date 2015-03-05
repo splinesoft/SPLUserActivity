@@ -1,6 +1,6 @@
 PODS:
   - MXGSynchronizeTest (1.1.0)
-  - SPLUserActivity (0.1.0)
+  - SPLUserActivity (0.1.1)
 
 DEPENDENCIES:
   - MXGSynchronizeTest
@@ -12,6 +12,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   MXGSynchronizeTest: 8f2f041ca6896caec74463ab43743d97d3dc8c18
-  SPLUserActivity: 87c6cc0b44a44bf2b5d52dd3cf766e73666ae71b
+  SPLUserActivity: 1b3a885c0ce38ef9ff8d1c4e85d8e022e9a5c154
 
 COCOAPODS: 0.35.0

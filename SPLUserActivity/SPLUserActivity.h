@@ -11,7 +11,7 @@
 /**
  *  An abstract superclass that manages a user activity for Handoff.
  *  Don't use this class directly except to subclass - instead, see
- *  @link SPLWebActivity @/link
+ *  @c SPLWebActivity.
  */
 @interface SPLUserActivity : NSObject <NSUserActivityDelegate>
 
