@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = "SPLUserActivity"
   s.version      = "0.1.0"
   s.summary      = "Easily adopt Handoff for different types of activities."
-  s.homepage     = "https://github.com/splinesoft/SSAccessibility"
+  s.homepage     = "https://github.com/splinesoft/SPLUserActivity"
   s.license      = { :type => 'MIT', :file => 'LICENSE'  }
   s.author       = { "Jonathan Hersh" => "jon@her.sh" }
   s.source       = { :git => "https://github.com/splinesoft/SPLUserActivity.git", :tag => s.version.to_s }
