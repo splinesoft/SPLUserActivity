@@ -13,6 +13,6 @@ test:
   override:
     - set -o pipefail && xcodebuild -workspace Example/SPLUserActivityExample.xcworkspace -scheme
       SPLUserActivityExample -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6"
-      clean test | xcpretty -c
+      clean test | xcpretty -c --report junit --output ${CIRCLE_TEST_REPORTS}/junit.xml
     - pod lib lint --quick
     - obcd --path SPLUserActivity find HeaderStyle
