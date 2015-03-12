@@ -1,6 +1,6 @@
 # SPLUserActivity
 
-[![Circle CI](https://circleci.com/gh/splinesoft/SPLUserActivity.svg?style=svg&circle-token=d7b0f2b0e1b33492be0a6cee7eb94c6e904ebe17)](https://circleci.com/gh/splinesoft/SPLUserActivity)
+[![Circle CI](https://circleci.com/gh/splinesoft/SPLUserActivity.svg?style=svg&circle-token=d7b0f2b0e1b33492be0a6cee7eb94c6e904ebe17)](https://circleci.com/gh/splinesoft/SPLUserActivity) [![Coverage Status](https://coveralls.io/repos/splinesoft/SPLUserActivity/badge.svg)](https://coveralls.io/r/splinesoft/SPLUserActivity)
 
 [Handoff](https://developer.apple.com/library/prerelease/ios/documentation/UserExperience/Conceptual/Handoff/AdoptingHandoff/AdoptingHandoff.html) is a powerful new feature in iOS 8 and OS X 10.10 that allows a user to begin an activity on one device and continue it on another device signed into the same iCloud account.
 
