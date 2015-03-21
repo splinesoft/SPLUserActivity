@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SPLUserActivity"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "Easily adopt Handoff for different types of activities."
   s.homepage     = "https://github.com/splinesoft/SPLUserActivity"
   s.license      = { :type => 'MIT', :file => 'LICENSE'  }

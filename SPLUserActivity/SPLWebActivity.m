@@ -82,15 +82,17 @@ static char SPLWebActivityContext;
 - (void)userActivityWillSave:(NSUserActivity *)userActivity {
     [super userActivityWillSave:userActivity];
     
-    if (self.webKitWebView) {
-        self.userActivity.webpageURL = self.webKitWebView.URL;
-        self.userActivity.title = self.webKitWebView.title;
-    }
-    
-    if (self.webView) {
-        self.userActivity.webpageURL = self.webView.request.URL;
-        self.userActivity.title = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
-    }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if (self.webKitWebView) {
+            self.userActivity.webpageURL = self.webKitWebView.URL;
+            self.userActivity.title = self.webKitWebView.title;
+        }
+        
+        if (self.webView) {
+            self.userActivity.webpageURL = self.webView.request.URL;
+            self.userActivity.title = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+        }
+    });
 }
 
 #pragma mark - KVO
