@@ -34,6 +34,7 @@
     [super tearDown];
     
     [webActivity invalidate];
+    webActivity = nil;
 }
 
 - (void)testInitializable {
