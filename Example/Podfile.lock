@@ -1,9 +1,7 @@
 PODS:
-  - MXGSynchronizeTest (1.1.0)
   - SPLUserActivity (0.1.2)
 
 DEPENDENCIES:
-  - MXGSynchronizeTest
   - SPLUserActivity (from `../`)
 
 EXTERNAL SOURCES:
@@ -11,7 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  MXGSynchronizeTest: 8f2f041ca6896caec74463ab43743d97d3dc8c18
   SPLUserActivity: 32c59c4dbb0fdbbf428f3ee46d02e609ab2e3119
 
 COCOAPODS: 0.36.0
