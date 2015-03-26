@@ -30,6 +30,12 @@
     webActivity = [SPLWebActivity activityWithWKWebView:webView];
 }
 
+- (void)tearDown {
+    [super tearDown];
+    
+    [webActivity invalidate];
+}
+
 - (void)testInitializable {
     XCTAssertNotNil(webActivity, @"activity should initialize");
     XCTAssertNotNil(webActivity.userActivity, @"activity should create a user activity");
