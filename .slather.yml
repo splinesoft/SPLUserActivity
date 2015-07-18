@@ -1,5 +1,0 @@
-ci_service: circleci
-coverage_service: coveralls
-xcodeproj: Example/SPLUserActivityExample.xcodeproj
-source_directory: SPLUserActivity
-ci_access_token: QVC9QdCczHntG57UCW8v7F0LoVX0isgDe
